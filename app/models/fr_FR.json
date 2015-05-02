@@ -1,0 +1,116 @@
+{
+    "legal": [
+        {
+            "id": 1,
+            "title": "Jour de l'An",
+            "prefix": "Le"
+        }, {
+            "id": 2,
+            "title": "Lundi de Pâques",
+            "prefix": "Le"
+        }, {
+            "id": 3,
+            "title": "Fête du Travail",
+            "prefix": "La"
+        }, {
+            "id": 16,
+            "title": "Victoire de 1945",
+            "prefix": "La"
+        }, {
+            "id": 4,
+            "title": "Jeudi de l'Ascension",
+            "prefix": "Le"
+        }, {
+            "id": 5,
+            "title": "Lundi de Pentecôte",
+            "prefix": "Le"
+        }, {
+            "id": 32,
+            "title": "Fête Nationale Française",
+            "prefix": "La"
+        }, {
+            "id": 7,
+            "title": "Assomption",
+            "prefix": "L'"
+        }, {
+            "id": 8,
+            "title": "La Toussaint",
+            "prefix": ""
+        }, {
+            "id": 9,
+            "title": "Armistice de 1918",
+            "prefix": "L'"
+        }, {
+            "id": 10,
+            "title": "Noël",
+            "prefix": ""
+        }
+    ],
+    "others": [
+        {
+            "id": 11,
+            "title": "Epiphanie",
+            "prefix": "L'"
+        }, {
+            "id": 12,
+            "title": "Chandeleur",
+            "prefix": "La"
+        }, {
+            "id": 13,
+            "title": "Saint-Valentin",
+            "prefix": "La"
+        }, {
+            "id": 33,
+            "title": "Fête des grands-mères",
+            "prefix": "La"
+        }, {
+            "id": 14,
+            "title": "Mardi gras",
+            "prefix": "Le"
+        }, {
+            "id": 15,
+            "title": "Pâques",
+            "prefix": ""
+        }, {
+            "id": 18,
+            "title": "Fête des mères",
+            "prefix": "La"
+        }, {
+            "id": 19,
+            "title": "Fête des pères",
+            "prefix": "La"
+        }, {
+            "id": 34,
+            "title": "Fête des grands-pères",
+            "prefix": "La"
+        }, {
+            "id": 23,
+            "title": "Halloween",
+            "prefix": ""
+        }, {
+            "id": 24,
+            "title": "Jour des morts",
+            "prefix": "Le"
+        }, {
+            "id": 27,
+            "title": "Sainte-Cécile",
+            "prefix": "La"
+        }, {
+            "id": 28,
+            "title": "Saint-Eloi",
+            "prefix": "La"
+        }, {
+            "id": 29,
+            "title": "Sainte-Barbe",
+            "prefix": "La"
+        }, {
+            "id": 30,
+            "title": "Saint-Nicolas",
+            "prefix": "La"
+        }, {
+            "id": 31,
+            "title": "Réveillon de la Saint-Sylvestre",
+            "prefix": "Le"
+        }
+    ]
+}

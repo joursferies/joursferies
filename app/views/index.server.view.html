@@ -1,0 +1,69 @@
+{% extends 'layout.server.view.html' %}
+
+{% block content %}
+
+<br><br>
+
+{% if (legal.highlightedEvent.isToday) %}
+    {# Holiday #}{% include "./templates/holiday.server.view.html" %}
+{% else %}
+    {# Countdown #}{% include "./templates/countdown.server.view.html" %}
+{% endif %}
+
+<br><br>
+
+{# LEGAL table #}
+<section>
+    <div class="center">
+        <h3>
+            Jours fériés
+            <select id="legal-year-select">
+                {% for year in availableYears %}
+                <option value="{{year}}"{% if loop.first %} selected="selected"{% endif %}>{{year}}</option>
+                {% endfor %}
+            </select>
+            en
+            <select id="legal-country-select">
+                {% for country,countryTr in availableCountries %}
+                <option value="{{country}}"{% if loop.first %} selected="selected"{% endif %}>{{countryTr}}</option>
+                {% endfor %}
+            </select>
+            <img id="legal-loader" class="invisible" src="modules/core/img/loader.gif" width="16" height="16">
+        </h3>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-xs-12">
+            {% include "./templates/table_legal.server.view.html" %}
+        </div>
+    </div>
+</section>
+
+{# OTHERS table #}
+<section>
+    <div class="center">
+        <h3>
+            Jours <span class="text-danger">non</span> fériés
+            <select id="others-year-select">
+                {% for year in availableYears %}
+                <option value="{{year}}"{% if loop.first %} selected="selected"{% endif %}>{{year}}</option>
+                {% endfor %}
+            </select>
+            en
+            <select id="others-country-select">
+                {% for country,countryTr in availableCountries %}
+                <option value="{{country}}"{% if loop.first %} selected="selected"{% endif %}>{{countryTr}}</option>
+                {% endfor %}
+            </select>
+            <img id="others-loader" class="invisible" src="modules/core/img/loader.gif" width="16" height="16">
+        </h3>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-xs-12">
+            {% include "./templates/table_others.server.view.html" %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

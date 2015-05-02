@@ -1,0 +1,14 @@
+<div class="table-responsive pointer" id="table-legal">
+    <table class="table table-hover">
+        <tbody>
+            {% for event in legal.events %}
+            <tr{% if (event.dates[year].finished) %} class="text-muted"{% endif %} data-uri="{{ event.uri }}">
+                <td>{{ event.title }}</td>
+                <td class="right">{{ event.dates[year].dow }}</td>
+                <td>{{ event.dates[year].formattedDate }}</td>
+                <td style="width: 40px"><i></i></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,54 @@
+{% extends 'layout.server.view.html' %}
+
+{% block content %}
+
+<br><br>
+
+<a href="/" id="close-btn" title="Revenir sur la page d'accueil"></a>
+
+<section class="row">
+    <article class="col-xs-12">
+        <header>
+            <h1 class="fs60 center">{{title}}</h1>
+        </header>
+
+        <br><br><br>
+
+        <div>{% include articleTemplate %}</div>
+
+        <br><br><br>
+
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th></th>
+                        {% for year in years %}
+                        <th colspan="2" class="center">{{ year }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for locale,data in calendar %}
+                    <tr>
+                        <td class="bold">{{ localesTr[locale + '_FR'] }}</td>
+                        {% for year in years %}
+                            {% if data[year] %}
+                                <td style="width: 15%;" class="right">{{ data[year].dow }}</td>
+                                <td style="width: 15%;">{{ data[year].formattedDate }}</td>
+                            {% else %}
+                                <td colspan="2">-</td>
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+    </article>
+</section>
+
+<br><br><br><br><br>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+<section class="row">
+    <div class="col-xs-12 center text-muted">Il reste</div>
+    <div class="col-xs-12">
+        <script type="text/javascript">
+            window.nextHolidayDate = {{ legal.highlightedEvent.date.timestamp }};
+        </script>
+        <ul id="countdown" class="invisible">
+            <li> <span class="days">XX</span>
+            <p class="days_ref">jour(s)</p>
+            </li>
+            <li class="seperator">.</li>
+            <li> <span class="hours">XX</span>
+            <p class="hours_ref">heure(s)</p>
+            </li>
+            <li class="seperator">:</li>
+            <li> <span class="minutes">XX</span>
+            <p class="minutes_ref">minute(s)</p>
+            </li>
+            <li class="seperator">:</li>
+            <li> <span class="seconds">XX</span>
+            <p class="seconds_ref">seconde(s)</p>
+            </li>
+        </ul>
+    </div>
+    <div class="col-xs-12 center">
+        <h2 class="mt0"><span class="text-muted">avant {{ legal.highlightedEvent.infos.prefix|lower }}</span> <b>{{ legal.highlightedEvent.infos.title }}</b> !</h2>
+        <div class="center mt20">
+            <button type="button" class="btn-link btn-social" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://www.joursferies.be', '_blank', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=635,height=368');return false;">
+                <img src="modules/core/img/fb_50.png" width="50" height="50" title="Partager avec Facebook" />
+            </button>
+            <button type="button" class="btn-link btn-social" onclick="window.open('https://twitter.com/home?status={{ ("Bientôt " + legal.highlightedEvent.infos.prefix|replace("'", "´", "g") + " " + legal.highlightedEvent.infos.title|replace("'", "´", "g") + " (" + legal.highlightedEvent.date.formattedDate + ") #jourférié - http://www.joursferies.be")|url_encode}}', '_blank', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=550,height=420');return false;">
+                <img src="modules/core/img/twitter_50.png" width="50" height="50" title="Partager avec Twitter" />
+            </button>
+            <button type="button" class="btn-link btn-social" onclick="window.open('https://plus.google.com/share?url=http://www.joursferies.be', '_blank', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=492,height=452');return false;">
+                <img src="modules/core/img/gp_50.png" width="50" height="50" title="Partager avec Google+" />
+            </button>
+        </div>
+    </div>
+</section>
