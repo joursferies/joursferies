@@ -39,14 +39,14 @@ module.exports = function(grunt) {
 				options: {
 					livereload: true
 				}
-			}/*,
+			},
 			clientCSS: {
 				files: watchFiles.clientCSS,
 				tasks: ['csslint'],
 				options: {
 					livereload: true
 				}
-			}*/
+			}
 		},
 		jshint: {
 			all: {
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
 					jshintrc: true
 				}
 			}
-		},/*
+		},
 		csslint: {
 			options: {
 				csslintrc: '.csslintrc',
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
 			all: {
 				src: watchFiles.clientCSS
 			}
-		},*/
+		},
 		imagemin: {
             dist: {
                 files: [{
@@ -153,7 +153,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('debug', ['lint', 'concurrent:debug']);
 
 	// Lint task(s).
-	grunt.registerTask('lint', ['jshint'/*, 'csslint'*/]);
+	grunt.registerTask('lint', ['jshint', 'csslint']);
 
 	// Build task(s).
 	grunt.registerTask('build', ['lint', 'loadConfig', 'concat', 'uglify', 'cssmin', 'imagemin']);
