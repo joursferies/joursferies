@@ -24,7 +24,7 @@ var countries = ['be', 'fr'];
 
 var categories = ['legal', 'others'];
 
-var availableYears = [2014, 2015, 2016, 2017, 2018, 2019, 2020];
+var availableYears = [2015, 2016, 2017, 2018, 2019, 2020];
 
 // ---
 
