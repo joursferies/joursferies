@@ -104,7 +104,7 @@ footer {
     margin-bottom: -3px;
     width: 16px;
     height: 16px;
-    background: transparent url('modules/core/img/info-icon.png') no-repeat;
+    background: transparent url('/modules/core/img/info-icon.png') no-repeat;
 }
 #table-legal tr:hover td:last-child > i,
 #table-others tr:hover td:last-child > i {
@@ -121,7 +121,7 @@ footer {
     opacity: .4;
     width: 32px;
     height: 32px;
-    background: transparent url('modules/core/img/close-icon.png') no-repeat;
+    background: transparent url('/modules/core/img/close-icon.png') no-repeat;
 }
 #close-btn:hover {
     opacity: .9;
